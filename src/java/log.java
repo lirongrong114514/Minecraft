@@ -101,7 +101,7 @@ public class log extends Thread{
                     writer.write(time+level+$msg+'\n');
                 }
             } catch (IOException e) {
-                throw new RuntimeException(e);
+                System.out.println("日志系统出现未知 错误");
             }
         }
     }
